@@ -135,3 +135,19 @@ a { text-decoration:none; color:inherit; }
     .cs-proof { grid-template-columns:1fr 1fr; }
     .cs-card-body ul { grid-template-columns:1fr; }
 }
+
+.cs-page { padding:3.8rem 0; }
+.cs-page-head { text-align:center; max-width:660px; margin:0 auto 2.4rem; }
+.cs-page-head h1 { font-size:clamp(1.7rem,3.2vw,2.4rem); color:var(--cs-ink); font-weight:800; margin:.5rem 0 .6rem; }
+.cs-page-head p { color:var(--cs-mute); font-size:.96rem; }
+.cs-banner { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.2rem; margin-bottom:2.4rem; }
+.cs-banner div { background:var(--cs-soft); border:1px solid #e2e8f0; border-radius:16px; padding:1.3rem; text-align:center; }
+.cs-banner b { color:var(--cs-navy); font-size:1.05rem; display:block; margin-bottom:.3rem; }
+.cs-banner span { color:var(--cs-mute); font-size:.85rem; }
+.cs-calc { background:var(--cs-soft); border:1px solid #e2e8f0; border-radius:18px; padding:1.6rem 1.5rem; max-width:600px; margin:0 auto; }
+.cs-calc label { display:block; font-size:.84rem; font-weight:600; color:#4b5a6a; margin:.8rem 0 .35rem; }
+.cs-calc input, .cs-calc select { width:100%; padding:.7rem .9rem; border:1px solid #cfd8e3; border-radius:10px; font:inherit; background:#fff; }
+.cs-calc .cs-btn { margin-top:1.2rem; width:100%; justify-content:center; border:0; cursor:pointer; color:var(--cs-navy-deep); }
+.cs-calc .cs-btn:hover { color:var(--cs-navy-deep); }
+.cs-calc-out { margin-top:1.2rem; background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem 1.1rem; font-size:.92rem; line-height:1.9; color:var(--cs-ink); }
+.cs-calc-out b { color:var(--cs-navy); }
