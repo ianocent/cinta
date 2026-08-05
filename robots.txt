@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dealersuzukigadingserpong.com/sitemap.xml
+Sitemap: https://dealersuzukigadingserpong.com/images-sitemap.xml
