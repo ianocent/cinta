@@ -153,3 +153,24 @@ a { text-decoration:none; color:inherit; }
 .cs-calc .cs-btn:hover { color:var(--cs-navy-deep); }
 .cs-calc-out { margin-top:1.2rem; background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem 1.1rem; font-size:.92rem; line-height:1.9; color:var(--cs-ink); }
 .cs-calc-out b { color:var(--cs-navy); }
+.cs-feats { background:var(--cs-navy-deep); color:#fff; }
+.cs-feats .cs-wrap { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; padding:1.5rem 0; }
+.cs-feats b { color:var(--cs-orange); font-size:1.02rem; display:block; }
+.cs-feats span { font-size:.83rem; opacity:.92; }
+.cs-filter { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; margin-bottom:1.8rem; }
+.cs-filter button { background:var(--cs-soft); border:1px solid #e2e8f0; color:var(--cs-mute); font:inherit; font-weight:700; font-size:.86rem; padding:.5rem 1.1rem; border-radius:999px; cursor:pointer; transition:.25s; }
+.cs-filter button:hover { border-color:var(--cs-navy); color:var(--cs-navy); }
+.cs-filter .cs-on { background:var(--cs-navy); border-color:var(--cs-navy); color:#fff; }
+.cs-mcards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.4rem; }
+.cs-mcard { background:#fff; border:1px solid #e2e8f0; border-radius:20px; overflow:hidden; display:flex; flex-direction:column; transition:.3s; }
+.cs-mcard:hover { transform:translateY(-6px); box-shadow:0 22px 46px rgba(30,58,138,.14); }
+.cs-mcard img { aspect-ratio:16/10; object-fit:cover; width:100%; }
+.cs-mcard-body { padding:1.1rem 1.2rem 1.3rem; display:flex; flex-direction:column; gap:.45rem; flex:1; }
+.cs-mcard-body h3 { font-size:1.12rem; font-weight:800; color:var(--cs-ink); }
+.cs-mcard-tag { font-size:.72rem; font-weight:800; color:#2563eb; text-transform:uppercase; letter-spacing:.08em; }
+.cs-mcard-price { font-size:.9rem; color:var(--cs-mute); }
+.cs-mcard-price b { color:var(--cs-navy); font-size:1.05rem; }
+.cs-mcard-wa { margin-top:auto; background:var(--cs-navy); color:#fff; text-align:center; padding:.68rem; border-radius:12px; font-weight:800; font-size:.88rem; transition:.25s; }
+.cs-mcard-wa:hover { background:var(--cs-orange); color:var(--cs-navy-deep); }
+@media (max-width:920px) { .cs-feats .cs-wrap { grid-template-columns:1fr 1fr; } }
+@media (max-width:560px) { .cs-feats .cs-wrap { grid-template-columns:1fr; } }
