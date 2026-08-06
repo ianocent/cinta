@@ -79,6 +79,8 @@ a { text-decoration:none; color:inherit; }
 .cs-model-row ul li::before { content:"• "; color:var(--cs-orange); font-weight:900; }
 .cs-model-row a { background:var(--cs-navy); color:#fff; padding:.55rem 1.1rem; border-radius:10px; font-weight:800; font-size:.85rem; white-space:nowrap; transition:.25s; }
 .cs-model-row a:hover { background:var(--cs-orange); color:var(--cs-navy-deep); }
+.cs-model-row img { width:104px; height:68px; object-fit:cover; border-radius:10px; flex:0 0 auto; }
+.cs-thumb { width:52px; height:36px; object-fit:cover; border-radius:6px; vertical-align:middle; margin-right:.5rem; display:inline-block; }
 
 .cs-story { display:grid; grid-template-columns:1fr 1fr; gap:2.4rem; align-items:center; }
 .cs-story-img { border-radius:22px; overflow:hidden; box-shadow:0 20px 50px rgba(2,6,23,.18); line-height:0; }
