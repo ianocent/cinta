@@ -12,7 +12,7 @@ Website: [https://dealersuzukigadingserpong.com](https://dealersuzukigadingserpo
 ## Dapatkan dari Salsa
 - Promo Suzuki Serpong &amp; Tangsel terbaru: XL7 Facelift, Fronx, Ertiga Hybrid, Jimny, Carry Pick Up
 - Estimasi DP ringan & cicilan semua leasing (Adira, Mandiri Tunas, BFI, OTO)
-- Test drive gratis area Serpong &amp; Tangerang Selatan
+- Test drive gratis area Serpong, Tangerang Selatan, Jakarta Timur &amp; Depok
 - Proses kredit cepat 1-3 hari
 
 ## WhatsApp
