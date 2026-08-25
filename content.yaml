@@ -1,0 +1,67 @@
+# content.yaml — sumber data katalog Salsa (Cinta Suzuki)
+# Edit angka promo/harga DI SINI saja, lalu jalankan: python shared/build.py cinta
+sales: Salsa
+domain: dealersuzukigadingserpong.com
+wa: "6285124432192"
+area: Serpong & Tangsel
+repo: git@github.com:ianocent/cinta.git
+
+tema:
+  prefix_css: cs
+  img_prefix: salsa
+  img_area_slug: gadingserpong
+  alt_area: Serpong
+
+kalkulator:
+  bunga_flat_default_pct: 5
+  tenor_bulan: [12, 24, 36, 48, 60, 72]
+
+models:
+  - nama: S-Presso
+    slug: s-presso
+    otr: 150000000
+    dp_mulai: 8000000
+    tenor_teks: "1-6 tahun"
+    catatan: City car paling lincah
+  - nama: Carry Pick Up
+    slug: carry-pickup
+    otr: 130000000
+    dp_mulai: 5000000
+    tenor_teks: "1-6 tahun"
+    catatan: Modal usaha cepat balik
+  - nama: Fronx
+    slug: fronx
+    otr: 240000000
+    dp_mulai: 20000000
+    tenor_teks: "1-6 tahun"
+    catatan: Coupe SUV favorit Gen-Z
+  - nama: Ertiga Hybrid
+    slug: ertiga
+    otr: 230000000
+    dp_mulai: 25000000
+    tenor_teks: "1-6 tahun"
+    catatan: MPV keluarga muda
+  - nama: XL7 Facelift
+    slug: xl7
+    otr: 250000000
+    dp_mulai: 30000000
+    tenor_teks: "1-6 tahun"
+    catatan: Baru launch, fitur nambah
+  - nama: Grand Vitara
+    slug: grand-vitara
+    otr: 350000000
+    dp_mulai: 10000000
+    tenor_teks: "1-6 tahun"
+    catatan: Strong hybrid senyap
+  - nama: APV
+    slug: apv
+    otr: 160000000
+    dp_mulai: 5000000
+    tenor_teks: "1-6 tahun"
+    catatan: Lega buat 8 penumpang
+  - nama: Jimny
+    slug: jimny
+    otr: 400000000
+    dp_mulai: null
+    tenor_teks: Konsultasi
+    catatan: Kuota terbatas tiap bulan
