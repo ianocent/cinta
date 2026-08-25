@@ -182,3 +182,29 @@ a { text-decoration:none; color:inherit; }
 .cs-social-card b { color:var(--cs-ink); font-size:.92rem; text-align:center; }
 .cs-social-card small { color:var(--cs-mute); font-size:.78rem; }
 .cs-lokal-card i { color:var(--cs-navy); font-size:1.2rem; line-height:1; }
+.cs-counts { background:#fff; border-bottom:1px solid #e2e8f0; }
+.cs-counts .cs-wrap { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; padding:1.4rem 0; text-align:center; }
+.cs-counts b { display:block; color:var(--cs-orange); font-size:1.35rem; font-weight:800; }
+.cs-counts small { color:var(--cs-mute); font-size:.82rem; }
+
+.cs-urgent { margin-top:.9rem; background:#fef3e2; border:1px dashed var(--cs-orange); color:var(--cs-ink); border-radius:12px; padding:.65rem 1rem; font-size:.88rem; display:inline-block; }
+.cs-urgent b { color:#c2410c; }
+
+.cs-quotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.4rem; }
+.cs-quote { margin:0; background:#fff; border-radius:20px; border-top:4px solid var(--cs-orange); box-shadow:0 14px 34px rgba(30,58,138,.08); padding:1.35rem 1.25rem; display:flex; flex-direction:column; gap:.7rem; transition:.28s; }
+.cs-quote:hover { transform:translateY(-5px); }
+.cs-rate { color:#f59e0b; letter-spacing:.15em; font-size:.95rem; }
+.cs-quote blockquote { margin:0; font-size:.92rem; line-height:1.75; color:#334155; font-style:italic; }
+.cs-quote figcaption b { display:block; color:var(--cs-ink); font-size:.94rem; }
+.cs-quote figcaption small { color:var(--cs-mute); font-size:.8rem; }
+
+@media (max-width:720px) { .cs-counts .cs-wrap { grid-template-columns:1fr; } }
+
+.cs-quick { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:1.6rem 1.5rem; max-width:600px; margin:0 auto; }
+.cs-quick label { display:block; font-size:.84rem; font-weight:700; color:var(--cs-mute); margin:.9rem 0 .35rem; }
+.cs-quick select { width:100%; padding:.7rem .9rem; border:1px solid #e2e8f0; border-radius:10px; font:inherit; background:#fbfcfe; }
+.cs-quick .cs-btn { margin-top:1.3rem; width:100%; justify-content:center; border:0; cursor:pointer; }
+.cs-quick-out { display:none; margin-top:1.2rem; background:var(--cs-sky); border-left:4px solid var(--cs-orange); border-radius:12px; padding:1rem 1.1rem; font-size:.92rem; line-height:1.8; color:var(--cs-ink); }
+
+.cs-tags { display:flex; flex-wrap:wrap; gap:.7rem; justify-content:center; }
+.cs-tags span { background:#fff; border:1.5px solid var(--cs-navy); color:var(--cs-navy); font-weight:700; font-size:.86rem; padding:.5rem 1.15rem; border-radius:999px; }

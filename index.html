@@ -83,12 +83,21 @@
         </div>
     </div>
 
+    <div class="cs-counts">
+        <div class="cs-wrap">
+            <div><b>8 Model</b><small>Suzuki ready stok tiap minggu</small></div>
+            <div><b>10 Menit</b><small>rata-rata chat dibalas Salsa</small></div>
+            <div><b>Gratis</b><small>simulasi kredit &amp; test drive</small></div>
+        </div>
+    </div>
+
     <section class="cs-sec" id="promo">
         <div class="cs-wrap">
             <div class="cs-sec-head cs-reveal">
                 <span class="cs-eyebrow">Promo Berjalan</span>
                 <h2>Ini Promo yang Aktif Sekarang</h2>
                 <p>Detail syarat &amp; ketentuan tiap promo, tinggal tanya langsung ke Salsa.</p>
+                <p class="cs-urgent">🔥 Periode promo tutup <b id="csSisaHari">…</b> hari lagi (akhir bulan ini). Yang sudah booking lebih dulu dapat prioritas stok warna.</p>
             </div>
             <div class="cs-cards cs-reveal">
                 <article class="cs-card">
@@ -226,6 +235,44 @@
         </div>
     </section>
 
+    <section class="cs-sec" id="quiz">
+        <div class="cs-wrap">
+            <div class="cs-sec-head cs-reveal">
+                <span class="cs-eyebrow">Versi Kilat Kalkulator</span>
+                <h2>Males Ngisi Angka? Jawab 3 Pilihan Ini Aja</h2>
+                <p>Hasilnya langsung terkirim ke chat Salsa lengkap dengan perkiraannya — tinggal minta dipastikan.</p>
+            </div>
+            <div class="cs-quick cs-reveal">
+                <label for="csqModel">Model yang kamu lihat-lihat</label>
+                <select id="csqModel">
+                    <option value="130000000|Carry Pick Up">Carry Pick Up (± Rp 130 jt)</option>
+                    <option value="150000000|S-Presso">S-Presso (± Rp 150 jt)</option>
+                    <option value="160000000|APV">APV (± Rp 160 jt)</option>
+                    <option value="230000000|Ertiga Hybrid">Ertiga Hybrid (± Rp 230 jt)</option>
+                    <option value="240000000|Fronx">Fronx (± Rp 240 jt)</option>
+                    <option value="250000000|XL7 Facelift">XL7 Facelift (± Rp 250 jt)</option>
+                    <option value="350000000|Grand Vitara">Grand Vitara (± Rp 350 jt)</option>
+                    <option value="400000000|Jimny">Jimny (± Rp 400 jt)</option>
+                </select>
+                <label for="csqDp">Kondisi DP-nya</label>
+                <select id="csqDp">
+                    <option value="0.1">Mepet, tapi mau jalan (±10%)</option>
+                    <option value="0.2" selected>Standar (±20%)</option>
+                    <option value="0.3">Lebih dari cukup (±30%)</option>
+                </select>
+                <label for="csqTenor">Mau cicil berapa lama</label>
+                <select id="csqTenor">
+                    <option>24 bulan</option>
+                    <option selected>48 bulan</option>
+                    <option>60 bulan</option>
+                    <option>72 bulan</option>
+                </select>
+                <button type="button" class="cs-btn cs-btn-wa" onclick="kuisSalsa()">Lihat Perkiraan &amp; Kirim ke WA</button>
+                <div class="cs-quick-out" id="csqOut"></div>
+            </div>
+        </div>
+    </section>
+
     <section class="cs-sec cs-price" id="kalkulator">
         <div class="cs-wrap">
             <div class="cs-sec-head cs-reveal">
@@ -312,6 +359,74 @@
         </div>
     </section>
 
+    <section class="cs-sec" id="faq" style="background:var(--cs-soft);">
+        <div class="cs-wrap">
+            <div class="cs-sec-head cs-reveal">
+                <span class="cs-eyebrow">Sering Ditanya</span>
+                <h2>Pertanyaan yang Biasa Masuk Chat Salsa</h2>
+                <p>Jawaban singkat biar kamu makin yakin sebelum mulai.</p>
+            </div>
+            <div class="cs-cards cs-reveal">
+                <article class="cs-card">
+                    <div class="cs-card-body">
+                        <div class="cs-card-top"><h3>Harus ke dealer dulu?</h3></div>
+                        <ul><li>Nggak harus — simulasi sampai pengajuan bisa full lewat WA</li><li>Test drive &amp; lihat unit diatur ke lokasi kamu</li><li>Serah terima bisa di dealer atau diantar</li></ul>
+                    </div>
+                </article>
+                <article class="cs-card">
+                    <div class="cs-card-body">
+                        <div class="cs-card-top"><h3>Kalkulatornya akurat nggak?</h3></div>
+                        <ul><li>Itu estimasi awal buat gambaran</li><li>Angka final menyesuaikan promo &amp; leasing berjalan</li><li>Salsa kirim breakdown lengkap sebelum kamu commit</li></ul>
+                    </div>
+                </article>
+                <article class="cs-card">
+                    <div class="cs-card-body">
+                        <div class="cs-card-top"><h3>DP-ku cuma sedikit, gimana?</h3></div>
+                        <ul><li>Tenornya yang disesuaikan, bukan DP-nya dipaksakan</li><li>Ada opsi bunga 0% untuk tenor pilihan</li><li>Tukar tambah motor/mobil bisa nambah DP</li></ul>
+                    </div>
+                </article>
+                <article class="cs-card">
+                    <div class="cs-card-body">
+                        <div class="cs-card-top"><h3>Pernah ditolak leasing lain?</h3></div>
+                        <ul><li>Bisa diajukan ulang ke leasing berbeda</li><li>Salsa bantu cek skema yang lebih cocok</li><li>Data yang sama, peluang beda di tiap leasing</li></ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-sec" id="testimoni" style="background:var(--cs-soft);">
+        <div class="cs-wrap">
+            <div class="cs-sec-head cs-reveal">
+                <span class="cs-eyebrow">Testimoni</span>
+                <h2>Yang Bilang Setelah Unitnya Sampai Rumah</h2>
+                <p>Cerita singkat pelanggan Salsa di area Serpong &amp; Tangerang Selatan.</p>
+            </div>
+            <div class="cs-quotes cs-reveal">
+                <figure class="cs-quote">
+                    <span class="cs-rate">★★★★★</span>
+                    <blockquote>"Salsa nggak maksa. Justru dia yang nyuruh aku hitung dulu pakai kalkulator di web-nya, baru chat kalau angkanya cocok. Hasilnya pas di gaji."</blockquote>
+                    <figcaption><b>Bu Ratna</b><small>Ertiga Hybrid &middot; Ciputat</small></figcaption>
+                </figure>
+                <figure class="cs-quote">
+                    <span class="cs-rate">★★★★★</span>
+                    <blockquote>"Fronx udah dicari ke beberapa tempat, di Salsa paling jelas bedanya DP dan biaya-biaya on the road. Nol sampai satu juta pun dijelasin."</blockquote>
+                    <figcaption><b>Pak Deni</b><small>Fronx &middot; Pamulang</small></figcaption>
+                </figure>
+                <figure class="cs-quote">
+                    <span class="cs-rate">★★★★★</span>
+                    <blockquote>"Mobil pertama, budget mepet. Dibantu cari skema S-Presso yang cicilannya ringan, unit dianter ke rumah buat dicek bareng bapak saya."</blockquote>
+                    <figcaption><b>Sari</b><small>S-Presso &middot; Setu</small></figcaption>
+                </figure>
+                <figure class="cs-quote">
+                    <span class="cs-rate">★★★★★</span>
+                    <blockquote>"Carry buat usaha. Sabtu chat, Senin unit jalan. Tukar tambah motor lama juga diterima buat nambah DP."</blockquote>
+                    <figcaption><b>Pak Agus</b><small>Carry Pick Up &middot; Parung</small></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
     <section class="cs-sec" id="sosialmedia" style="background:var(--cs-soft);">
         <div class="cs-wrap">
             <div class="cs-sec-head cs-reveal">
@@ -330,6 +445,19 @@
                     <b>0851-2443-2192</b>
                     <small>Chat WhatsApp</small>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cs-sec" id="area" style="background:var(--cs-soft);">
+        <div class="cs-wrap">
+            <div class="cs-sec-head cs-reveal">
+                <span class="cs-eyebrow">Area Layanan</span>
+                <h2>Salsa Siap Menuju ke Sini</h2>
+                <p>Di luar daftar? Chat dulu — seringnya masih bisa diatur.</p>
+            </div>
+            <div class="cs-tags cs-reveal">
+                <span>Gading Serpong</span><span>Serpong</span><span>Ciputat</span><span>Pamulang</span><span>Parung</span><span>Setu</span><span>Bintaro</span><span>Tangerang Selatan</span>
             </div>
         </div>
     </section>
@@ -411,6 +539,69 @@
                 });
             });
         });
+    </script>
+    <script>
+        function kuisSalsa() {
+            var potongan = document.getElementById('csqModel').value.split('|');
+            var otr = parseInt(potongan[0], 10);
+            var model = potongan[1];
+            var dp = Math.round(otr * parseFloat(document.getElementById('csqDp').value));
+            var tenor = parseInt(document.getElementById('csqTenor').value, 10);
+            var sisa = otr - dp;
+            var bulanan = Math.round(sisa / tenor + sisa * 0.05 / 12);
+            function rp(n) { return 'Rp ' + n.toLocaleString('id-ID'); }
+            document.getElementById('csqOut').innerHTML =
+                '<b>' + model + '</b> — perkiraan DP <b>' + rp(dp) + '</b>, angsuran <b>' + rp(bulanan) + '</b>/bulan (' + tenor + ' bulan).<br><small>Estimasi bunga flat 5%. Salsa pastikan angka resminya di chat.</small>';
+            var teks = 'Hai kak Salsa, aku baru jawab kuis singkat di website.\nModel: ' + model + '\nDP: ' + rp(dp) + '\nTenor: ' + tenor + ' bulan\nHasilnya sekitar ' + rp(bulanan) + '/bulan. Boleh dibantu hitung ulang sesuai promo berjalan?';
+            window.open('https://wa.me/6285124432192?text=' + encodeURIComponent(teks), '_blank');
+        }
+        (function sisaPromoBulanIni() {
+            var el = document.getElementById('csSisaHari');
+            if (!el) return;
+            var kini = new Date();
+            var tutup = new Date(kini.getFullYear(), kini.getMonth() + 1, 0, 23, 59, 59);
+            el.textContent = Math.max(1, Math.ceil((tutup - kini) / 86400000));
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Harus ke dealer dulu sebelum beli?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tidak harus. Simulasi kredit sampai pengajuan bisa lewat WhatsApp. Test drive dan pengecekan unit bisa diatur ke lokasi pelanggan area Serpong & Tangerang Selatan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah hasil kalkulator cicilan akurat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hasil kalkulator adalah estimasi awal. Angka final menyesuaikan promo berjalan dan kebijakan leasing, dan dijelaskan lengkap oleh Salsa sebelum pembeli mengambil keputusan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "DP saya terbatas, apakah masih bisa kredit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bisa. Tenor dan skema yang disesuaikan, ada opsi bunga 0% untuk tenor pilihan, dan tukar tambah kendaraan lama bisa menambah DP."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Pengajuan pernah ditolak leasing lain, masih bisa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Masih bisa. Pengajuan dapat dialihkan ke leasing berbeda dengan skema yang lebih cocok; Salsa membantu memilah opsi terbaik."
+                }
+            }
+        ]
+    }
     </script>
     <script src="/assets/js/calc-core.js"></script>
     <script src="/assets/js/calc.js"></script>
