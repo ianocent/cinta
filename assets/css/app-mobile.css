@@ -1,5 +1,6 @@
 /* ============================================================
    MODE APLIKASI MOBILE - Cinta Suzuki (Salsa)
+   Karakter mobile: BOTTOM BAR GELAP MATERIAL (navy + pill oranye)
    Semua aturan DIKUNCI di dalam media query.
    Di desktop file ini tidak berefek apa pun.
    ============================================================ */
@@ -11,7 +12,7 @@
     /* --- dasar rasa aplikasi --- */
     html { -webkit-text-size-adjust: 100%; }
     body {
-        padding-bottom: calc(66px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
         overscroll-behavior-y: none;
         -webkit-tap-highlight-color: transparent;
     }
@@ -32,23 +33,22 @@
         margin-bottom: 10px;
     }
 
-    /* float WA lama disembunyikan - tab Salsa di appbar menggantikan */
+    /* float WA lama disembunyikan - tombol squircle oranye menggantikan */
     .cs-wa-float { display: none; }
 
-    /* --- bottom app bar ala native --- */
+    /* --- bottom bar gelap ala Material You --- */
     .cs-appbar {
         display: flex;
         position: fixed;
         left: 0; right: 0; bottom: 0;
         z-index: 90;
-        height: calc(66px + env(safe-area-inset-bottom, 0px));
-        padding: 0 6px env(safe-area-inset-bottom, 0px);
-        background: rgba(255,255,255,.94);
-        backdrop-filter: saturate(180%) blur(16px);
-        -webkit-backdrop-filter: saturate(180%) blur(16px);
-        border-top: 1px solid #e2e8f0;
-        box-shadow: 0 -8px 24px rgba(23,37,84,.1);
+        height: calc(72px + env(safe-area-inset-bottom, 0px));
+        padding: 8px 10px env(safe-area-inset-bottom, 0px);
+        background: var(--cs-navy-deep);
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 -10px 32px rgba(23, 37, 84, .38);
         align-items: stretch;
+        gap: 4px;
     }
     .cs-appbar a {
         flex: 1;
@@ -58,32 +58,33 @@
         justify-content: center;
         gap: 3px;
         text-decoration: none;
-        color: #93a1b5;
-        font-size: .62rem;
+        color: rgba(219, 234, 254, .62);
+        font-size: .6rem;
         font-weight: 700;
-        position: relative;
-        min-height: 44px;
+        letter-spacing: .02em;
+        border-radius: 999px;
+        transition: background .2s ease, color .2s ease;
     }
-    .cs-appbar a i.bx { font-size: 1.35rem; line-height: 1; transition: transform .15s ease; }
+    .cs-appbar a i.bx { font-size: 1.3rem; line-height: 1; transition: transform .15s ease; }
     .cs-appbar a:active i.bx { transform: scale(.88); }
-    .cs-appbar a.cs-on { color: var(--cs-navy); }
-    .cs-appbar a.cs-on::before {
-        content: "";
-        position: absolute;
-        top: 0; width: 34px; height: 3px;
-        border-radius: 0 0 4px 4px;
-        background: var(--cs-orange);
-    }
 
-    /* slot Salsa (WA) tengah menonjol */
-    .cs-appbar a.cs-wa span { color: #128c7e; }
+    /* aktif = pill oranye penuh di belakang item */
+    .cs-appbar a.cs-on {
+        background: var(--cs-orange);
+        color: var(--cs-navy-deep);
+        box-shadow: 0 6px 18px rgba(251, 146, 60, .42);
+    }
+    .cs-appbar a.cs-on span { color: var(--cs-navy-deep); }
+
+    /* slot Salsa (WA): squircle oranye mengambang dari bar */
+    .cs-appbar a.cs-wa span { color: rgba(219, 234, 254, .85); }
     .cs-appbar a.cs-wa i.bx {
-        width: 48px; height: 48px;
-        margin-top: -28px;
-        background: linear-gradient(135deg,#25d366,#128c7e);
-        border-radius: 50%;
+        width: 46px; height: 46px;
+        margin-top: -30px;
+        background: linear-gradient(135deg, #fb923c, #ea580c);
+        border-radius: 16px;
         display: grid; place-items: center;
-        font-size: 1.55rem; color: #fff;
-        box-shadow: 0 8px 18px rgba(37,211,102,.45), 0 0 0 5px rgba(255,255,255,.94);
+        font-size: 1.5rem; color: #fff;
+        box-shadow: 0 10px 24px rgba(234, 88, 12, .5), 0 0 0 5px var(--cs-navy-deep);
     }
 }
