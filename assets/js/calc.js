@@ -1,5 +1,5 @@
 /*
- * calc.js — adapter tipis kalkulator cicilan (Cinta/Salsa).
+ * calc.js — adapter tipis kalkulator cicilan (Salsa).
  * Logika hitung ada di calc-core.js (hitungKredit, fmtRp).
  */
 function fmt(n) {

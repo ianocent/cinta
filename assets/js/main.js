@@ -1,5 +1,5 @@
 /*
- * main.js — efek reveal scroll (cinta).
+ * main.js — efek reveal scroll (salsa).
  * initReveal(prefix) generik; prefix class unik per site.
  */
 function initReveal(prefix) {

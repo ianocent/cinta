@@ -1,4 +1,4 @@
-# content.yaml — sumber data katalog Salsa (Cinta Suzuki)
+# content.yaml — sumber data katalog Salsa Suzuki
 # Edit angka promo/harga DI SINI saja, lalu jalankan: python shared/build.py cinta
 sales: Salsa
 domain: dealersuzukigadingserpong.com
