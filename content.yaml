@@ -9,7 +9,7 @@ repo: git@github.com:ianocent/cinta.git
 tema:
   prefix_css: cs
   img_prefix: salsa
-  img_area_slug: gadingserpong
+  img_area_slug: serpong
   alt_area: Serpong
 
 kalkulator:
